@@ -334,11 +334,12 @@ h6,
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
 .clouds-of-aether {
   width: 120%;
-  height: 500%;
+  height: 100%;
   position: absolute;
-  top: -90%;
+  top: 0;
   bottom: 0%;
   left: -8%;
   right: 0%;
@@ -365,7 +366,7 @@ h6,
 
 #hero {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   overflow: hidden;
   position: relative;
 }
@@ -376,13 +377,12 @@ h6,
   left: 50%;
   top: 0;
   width: 130%;
-  height: 100vh;
-  /*  background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/hero-bg.jpg") center top no-repeat; */
+  height: 95%;
+  /* background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/hero-bg.jpg") center top no-repeat; */
   z-index: 0;
-  /* border-radius: 0 0 50% 50%; */
+  border-radius: 0 0 50% 50%;
   transform: translateX(-50%) rotate(0deg);
 }
-
 
 #hero::before {
   content: "";
@@ -390,12 +390,12 @@ h6,
   left: 50%;
   top: 0;
   width: 130%;
-  height: 100vh;
+  height: 96%;
   background: #68A4C4;
-  opacity: 0.8;
+  opacity: 0.3;
   z-index: 0;
   /* border-radius: 0 0 50% 50%; */
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(18px) rotate(2deg);
 }
 
 #hero .carousel-container {
@@ -496,8 +496,8 @@ h6,
   #hero::after {
     left: 40%;
     top: 0;
-    width: 100%;
-    height: 100vh;
+    width: 200%;
+    height: 95%;
     border-radius: 0 0 50% 50%;
     transform: translateX(-50%) rotate(0deg);
   }
@@ -517,8 +517,8 @@ h6,
 --------------------------------------------------------------*/
 #hero-no-slider {
   width: 100%;
-  height: 1000%;
-  /*  overflow: hidden; */
+  height: 100vh;
+  overflow: hidden;
   position: relative;
   text-align: center;
 }
@@ -530,7 +530,7 @@ h6,
   top: 0;
   right: 0;
   bottom: 0;
-  /*  background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/hero-bg.jpg") center top no-repeat; */
+  background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/hero-bg.jpg") center top no-repeat;
 }
 
 #hero-no-slider h2 {
